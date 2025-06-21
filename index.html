@@ -108,8 +108,8 @@
   const allowed = prompt("Enter password to view the page:");
   const accepted = ["22/6/2001", "22-6-2001", "22.6.2001", "22 June 2001"];
   if (!accepted.includes(allowed)) {
-    document.open();
-    document.write(`
+    document.addEventListener("DOMContentLoaded", () => {
+        document.body.innerHTML = `
         <style>
           body {
             background-color: black;
@@ -121,11 +121,13 @@
         </style>
         <h2>Access Denied ❌</h2>
         <p>Incorrect password. Please reload the page and try again.</p>
-      `);
-      document.close();
-      throw new Error("Access blocked");
-    }
+      `;
+    });
+   }
 </script>
+  
+<div id="content">
+  
   <h1>To My Best Friend on Her 24th Birthday!!</h1>
 
   <audio autoplay loop controls>
@@ -256,5 +258,7 @@
     }
   </script>
 
+  </div>
+  
 </body>
 </html>
