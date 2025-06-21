@@ -107,9 +107,21 @@
 <script>
   const allowed = prompt("Enter password to view the page:");
   if (allowed !== "22/6/2001") {
-    document.write("<h2 style='color:white; text-align:center; margin-top:100px;'>Access Denied ❌</h2>");
-    throw new Error("Access blocked");
-  }
+    document.write(`
+        <style>
+          body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+          }
+        </style>
+        <h2>Access Denied ❌</h2>
+        <p>Incorrect password. Please reload the page and try again.</p>
+      `);
+      throw new Error("Access blocked");
+    }
 </script>
   <h1>To My Best Friend on Her 24th Birthday!!</h1>
 
