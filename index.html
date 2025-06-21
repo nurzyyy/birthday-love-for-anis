@@ -106,7 +106,8 @@
 <body>
 <script>
   const allowed = prompt("Enter password to view the page:");
-  if (allowed !== "22/6/2001") {
+  const accepted = ["22/6/2001", "22-6-2001", "22.6.2001", "22 June 2001"];
+  if (!accepted.includes(allowed)) {
     document.write(`
         <style>
           body {
