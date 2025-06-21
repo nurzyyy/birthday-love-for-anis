@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Letters</title>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+    body {
+      background-image: url('pink.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 80px 40px 40px 40px;
+    }
+    h1 {
+      font-family: 'Satisfy', cursive;
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    button {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff99c8;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff66a3;
+    }
+    .letter {
+      display: none;
+      margin-top: 40px;
+      text-align: left;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff0f5;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .flower {
+     position: fixed;
+     top: -50px;
+     width: 30px;
+     height: 30px;
+     animation: fall linear infinite;
+     z-index: 1;
+     pointer-events: none;
+    }
+
+    @keyframes fall {
+     0% {
+       transform: translateY(0) rotate(0deg);
+       opacity: 1;
+     }
+     100% {
+       transform: translateY(100vh) rotate(360deg);
+       opacity: 0;
+     }
+   }
+  </style>
+</head>
+<body>
+<script>
+  const allowed = prompt("Enter password to view the page:");
+  if (allowed !== "22/6/2001") {
+    document.body.innerHTML = "<h2 style='color: white; text-align: center; margin-top: 100px;'>Access Denied ❌</h2>";
+    throw new Error("Unauthorized access");
+  }
+</script>
+  <h1>To My Best Friend on Her 24th Birthday!!</h1>
+
+  <audio autoplay loop controls>
+    <source src="Long Live (Taylor's Version) - Taylor Swift.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button onclick="showLetter('letter1')">🌙 12:00 AM Letter</button>
+  <button onclick="showLetter('letter2')">🌅 11:59 PM Letter</button>
+  <button onclick="showLetter('letter3')">💌 About Your Heart</button>
+
+  <div id="letter1" class="letter">
+    <h2>🌙 12:00 AM Letter</h2>
+    <div style="text-align: justify;">
+    <p>Dear Anis,</p>
+<p>It’s midnight, the first few seconds of your birthday, and I wanted to be here at the start of your 24th year because you matter that much to me.</p>
+
+<p>I still remember the first time we met back in 2019. We were just diploma students, still figuring out who we were, stumbling through classes, assignments, and growing pains. Back then, I didn’t know you’d become someone so important in my life.</p>
+
+<p>Now we’re 24. Life is moving fast. You’re working in another state, and I’m studying in a different one. Even though distance tries its best to quiet our friendship, it never wins, because here I am writing you a birthday letter at midnight, thinking of how far you’ve come.</p>
+
+<p>This year hasn’t been easy for you. I’ve watched you go through things most people can’t even imagine, the accident, losing your cat, carrying a heavy heart over your relationship struggles. Through it all, you still showed up. You woke up and faced each day, even when your body and heart felt heavy. I need you to know how proud I am of you for that.</p>
+
+<p>You’re strong, not in a loud, dramatic way, but in the quiet way that matters. The kind of strength that keeps going even when everything feels too much.</p>
+
+<p>I miss you. I missed you during my last break when we couldn’t meet, and I miss you now on days when something funny, sad, or exciting happens and I think, “I wish she was here.”</p>
+
+<p>And since I’m being honest, I’ll say this too... sometimes I’ve felt upset, hurt, even forgotten. I never told you because I know your heart and that you’re doing your best. But still, I’m human, and there were times I needed you and you weren’t there in the way I hoped, which made me feel small.</p>
+
+<p>But despite that, I always forgave, and I still do, because you’re my only best friend. I can never really stay mad at you, because I understand you and I know how much you’ve been through.</p>
+
+<p>So today, I just want to remind you of this, no matter how far we are, no matter how quiet the days get, I will always be rooting for you and always be grateful for you.</p>
+
+<p>Happy 24th birthday, Anis. May this year bring you peace, healing, and gentleness. I hope you start choosing yourself more, laughing more, and loving yourself the way you deserve.</p>
+
+<p>Here’s to more years of being best friends, even when life pulls us in different directions. We’ll always find our way back.</p>
+
+<p>Love you so, so much,<br>Azyy</p>
+  </div>
+</div>
+
+  <div id="letter2" class="letter">
+    <h2>🌅 11:59 PM Letter</h2>
+    <div style="text-align: justify;">
+    <p>My best friend,</p>
+<p>It’s almost the end of your birthday. I hope in some small way you felt loved, even if the day wasn’t perfect or things didn’t go exactly as planned.</p>
+
+<p>I was thinking a lot today about how far we’ve come, not just in age but emotionally, personally, and spiritually. We’re not the same girls we were in diploma. Life has shaped us, stretched us, and challenged us. Even though I couldn’t be beside you today, I was with you in every thought, every prayer, and every silent wish I made for you.</p>
+
+<p>I know things have been tough this year. Your body has had to carry pain it didn’t ask for, and your heart has had to let go of things it still wanted to keep. I wish I could have taken some of that pain away for you. I really do. But I also know you survived every single day of it, and you’re still here. That makes you nothing short of amazing.</p>
+
+<p>You always worry about being a burden and apologize for things you can’t control. Let me say this clearly once and for all.. you are not a burden. You are a gift, even when you’re quiet, sad, or feel you’re not enough.</p>
+
+<p>I wish we could have met during my last break. That still aches in my chest, but I understand life keeps happening and timing doesn’t always work out. Still, I’ll wait for the day it does, and I’ll keep saving moments for when I can finally hug you again.</p>
+
+<p>I know I told you earlier that I’ve been upset with you sometimes. I needed to say that because friendships deserve honesty. But just as important is this truth: you are still my best friend. You’re the one person I trust with everything, the only one who’s made it this far with me, and the one I hope stays for the long run.</p>
+
+<p>So as you close the chapter of your birthday and step fully into 24, take a deep breath. Let go of guilt and the heavy things, and let yourself feel proud.</p>
+
+<p>You made it through another year. That’s not small, that’s huge!</p>
+
+<p>May 24 be a year of softness, light, better health, brighter days, and deeper love. May you forgive yourself easier, laugh louder, and meet parts of yourself you’ve never met before and fall in love with them.</p>
+
+<p>And may you always know I’m here, even when quiet or far away. I’ll always be here.</p>
+
+<p>Goodnight, birthday girl. You are loved beyond words.</p>
+
+<p>Forever your best friend,<br>Azyy</p>
+  </div>
+</div>
+
+  <div id="letter3" class="letter">
+    <h2>💌 About Your Heart</h2>
+    <div style="text-align: justify;">
+    <p>Anis,</p>
+
+<p>I’ve been thinking about writing you this for a while. And today feels like the right moment. Not because it’s your birthday and you’re supposed to be okay, but because sometimes the people we love the most need reminders the loudest on the quietest days.</p>
+
+<p>I know this year has asked a lot from your heart. More than it should’ve.</p>
+
+<p>I know how much you’ve carried when it comes to him. I’ve seen the love you pour out, how much you care, how deeply you hope. And I know the fights, the same ones that keep coming back, have left you tired in places you don’t always talk about.</p>
+
+<p>But let me say this clearly, I’m not telling you to give up.</p>
+
+<p>I know he’s not a bad person. I know he loves you. I know you love him. Relationships are complicated. Love isn’t always tidy or easy. What matters is that you both try. And I know you do.</p>
+
+<p>I’m not on one side or the other. I’m on your side.</p>
+
+<p>Always.</p>
+
+<p>So this isn’t a letter full of answers. It’s just a letter full of presence. To remind you that it’s okay to feel both love and frustration. To want to stay but wish things felt easier. To keep hoping and still feel tired.</p>
+
+<p>You’re doing your best. I see that. And I hope you feel proud of yourself for the patience and loyalty you’ve given, not just to him, but to everything in your life. You have a heart that fights for people, even when you're quietly breaking.</p>
+
+<p>And that’s why I love you.</p>
+
+<p>I’m not worried about where things go between you and him. I trust your judgment. I trust your love. And whatever you choose, I’ll be right beside you, celebrating the good moments and comforting you through the hard ones.</p>
+
+<p>You don’t need to figure everything out today. You don’t need to pretend it’s all perfect. You just need to breathe, feel what you feel, and remember you’re not alone in this.</p>
+
+<p>Happy birthday, my girl. You deserve peace, warmth, and a kind of love that feels like a soft place to land. Whether that comes now or takes time, I’ll be here, cheering for you.</p>
+
+<p>With so much love,<br>Azyy</p>
+  </div>
+</div>
+
+  <script>
+    function showLetter(id) {
+      const letters = document.querySelectorAll('.letter');
+      letters.forEach(letter => letter.style.display = 'none');
+
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+  <script>
+    const flowerCount = 20;
+
+    for (let i = 0; i < flowerCount; i++) {
+      const flower = document.createElement("img");
+      flower.src = "flower.png";
+      flower.className = "flower";
+
+      flower.style.left = Math.random() * 100 + "vw";
+      flower.style.animationDuration = (5 + Math.random() * 5) + "s";
+      flower.style.animationDelay = Math.random() * 5 + "s";
+
+      document.body.appendChild(flower);
+    }
+  </script>
+
+</body>
+</html>
